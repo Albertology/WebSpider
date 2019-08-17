@@ -39,9 +39,9 @@ parser.add_argument('website', type=str, help='website to scan')
 parser.add_argument('expressions', type=str, help='list off expressions')
 parser.add_argument('--extension', type=str, default='', help='file extension')
 parser.add_argument('--max_length', type=int, default=1, help='max name length for non-specified expressions')
-parser.add_argument('--last_file', type=bool, default=False, help='Is the last part a file?')
-parser.add_argument('--wrong_pages', type=str, default='', help='Path to the file with wrong pages')
-parser.add_argument('--display_possible', type=bool, default=False, help='Does it display possible sites?')
+parser.add_argument('--last_file', type=bool, default=False, help='is the last part a file?')
+parser.add_argument('--wrong_pages', type=str, default='', help='path to the file with wrong pages')
+parser.add_argument('--display_possible', type=bool, default=False, help='does it display possible sites?')
 args = parser.parse_args()
 
 generators = []
