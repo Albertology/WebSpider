@@ -17,5 +17,21 @@ Disclaimer: This should not be used for illegal activity and I am not responsibl
     last_file -used for specifying if the last part of the url is a file
     display_possible -if return_status is not 200 and this is true it also displays the ones without (Will be removed in the next version)
     
+# Expressions
 
+Can contain:
+
+Any ascii characters(that may be used in an url)
+
+Special sequences:
+    /d all digits <=> '[0-9]'
+    /l all small letters <=> '[a-z]'
+    /L all big letters <=> '[A-Z]'
     
+Note: this tool uses forwrd slashes for simplicity, though it may be changed in later versions
+
+Sets(similar to regex sets):
+    '[abc]' will match(generate) 'a' -> 'b' -> 'c'
+    '[a-z]' will generate 'a' -> 'b' -> 'c' -> ... -> 'z'
+    '[a/-z]' will generate 'a' -> '-' -> 'z' (because '-' is excaped)
+    '[a-]' will generate 'a' -> '-' (incomplete set)
