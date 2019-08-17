@@ -24,6 +24,7 @@ Can contain:
 Any ascii characters(that may be used in an url)
 
 Special sequences:
+
     /d all digits <=> '[0-9]'
     /l all small letters <=> '[a-z]'
     /L all big letters <=> '[A-Z]'
@@ -31,7 +32,8 @@ Special sequences:
 Note: this tool uses forwrd slashes for simplicity, though it may be changed in later versions
 
 Sets(similar to regex sets):
-    '[abc]' will match(generate) 'a' -> 'b' -> 'c'
+
+    '[abc]' will match(generate) 'a' -> 'b' -> 'c' 
     '[a-z]' will generate 'a' -> 'b' -> 'c' -> ... -> 'z'
     '[a/-z]' will generate 'a' -> '-' -> 'z' (because '-' is excaped)
     '[a-]' will generate 'a' -> '-' (incomplete set)
